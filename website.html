@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSS KWONG KITCHEN</title>
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --accent-gold: #f4b400;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: var(--primary-green);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-gold);
+            color: black;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .category-section {
+            margin-bottom: 60px;
+        }
+
+        .category-title {
+            border-bottom: 3px solid var(--primary-green);
+            color: var(--primary-green);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Recipe Card */
+        .recipe-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            background: var(--light-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .recipe-image {
+            flex: 1;
+            min-width: 300px;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-green);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        h3 { color: #d35400; }
+        ul, ol { padding-left: 20px; }
+    </style>
+</head>
+<body>
+
+<header id="top">
+    <h1>MSS KWONG KITCHEN</h1>
+</header>
+
+<nav>
+    <a href="#main-dish">Main Dish</a>
+    <a href="#dessert">Dessert</a>
+    <a href="#appetizer">Appetizer</a>
+    <a href="#drinks">Drinks</a>
+</nav>
+
+<div class="container">
+
+    <section id="main-dish" class="category-section">
+        <h2 class="category-title">Main Dish</h2>
+        
+        <div class="recipe-card">
+            <img src=//www.eatwithcarmen.com/wp-content/uploads/2022/09/chicken-adobo_.jpg " alt= Chicken Adobo" class="recipe-image">
+            <div class="recipe-content">
+                <h3>CHICKEN ADOBO(Grilled Chicken)</h3>
+                <p><strong>Ingredients:</strong> Chicken leg quarters, soy sauce, calamansi juice, garlic, black pepper, and banana ketchup for basting.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Marinate chicken in soy sauce, garlic, and calamansi for at least 3 hours.</li>
+                        <li>Prepare the grill to medium heat.</li>
+                        <li>Grill chicken for 10-15 mins per side, basting with ketchup mixture until charred and cooked through.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src=//assets.unileversolutions.com/recipes-v2/110773.jpg alt="Seafood Kare-Kare" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Seafood Kare-Kare</h3>
+                <p><strong>Ingredients:</strong> Shrimp, mussels, squid, peanut sauce, annatto water, bok choy, eggplant, and string beans.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Saute garlic and onions, then add peanut sauce and annatto water.</li>
+                        <li>Add vegetables and simmer until tender.</li>
+                        <li>Add seafood last to prevent overcooking. Serve with bagoong (shrimp paste).</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dessert" class="category-section">
+        <h2 class="category-title">Dessert</h2>
+
+        <div class="recipe-card">
+            <img src=//th.bing.com/th/id/R.80b4fd150a8f2e7ff3fa63c336d116f7?rik=ZlN0AeKCxIsl9Q&riu=http%3a%2f%2fwww.wikihow.com%2fimages%2f4%2f41%2fMake-Leche-Flan-Step-5.jpg&ehk=wr%2fHO3oJFA75QnnNbn%2be6gwDPCZiDcc3kzCriU3yNtI%3d&risl=&pid=ImgRaw&r=0alt="Leche Flan" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Leche Flan</h3>
+                <p><strong>Ingredients:</strong> Egg yolks, condensed milk, evaporated milk, sugar (for caramel), and vanilla extract.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Melt sugar in llaneras to create caramel.</li>
+                        <li>Mix yolks and milk gently (avoid bubbles). Strain into llaneras.</li>
+                        <li>Steam for 30-45 minutes until firm. Chill before serving.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src=//th.bing.com/th/id/R.b6b0ba5db820488806dd12aee4dc970e?rik=d1AzTLxOSdn0ZA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-7JPXy6O-MPk%2fUWwsTTkKnkI%2fAAAAAAAAADA%2fp4MF66x9tsg%2fs1600%2fhalo-halo-special.jpg&ehk=DNtOig39B0vVPVhRHp8mR38%2bY8eenKK1AWobMGnoiRU%3d&risl=&pid=ImgRaw&r=0 alt="Halo-Halo" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Special Halo-Halo</h3>
+                <p><strong>Ingredients:</strong> Shaved ice, evaporated milk, ube ice cream, leche flan, sweetened beans, macapuno, and nata de coco.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>In a tall glass, layer the sweetened fruits and beans.</li>
+                        <li>Fill the glass with shaved ice.</li>
+                        <li>Pour milk, then top with ube ice cream, leche flan, and pinipig.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="appetizer" class="category-section">
+        <h2 class="category-title">Appetizer</h2>
+
+        <div class="recipe-card">
+            <img src=//tse4.mm.bing.net/th/id/OIP.TW5uOPhDEDwDuaVzraLRvgHaEc?w=775&h=465&rs=1&pid=ImgDetMain&o=7&rm=3 alt="Lumpiang Shanghai" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Lumpiang Shanghai</h3>
+                <p><strong>Ingredients:</strong> Ground pork, minced carrots, onions, garlic, egg, and spring roll wrappers.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Mix pork and vegetables. Season with salt and pepper.</li>
+                        <li>Wrap small portions in wrappers and seal with water.</li>
+                        <li>Deep fry until golden brown and crispy.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src=//th.bing.com/th/id/R.03acba4b402bc510864926d31ff40015?rik=pzg3uRLVrolkzw&riu=http%3a%2f%2fwww.wikihow.com%2fimages%2f3%2f3b%2fMake-Kwek-Kwek-Step-12.jpg&ehk=KzhKXPX21mOHWAUOuklwkUwJKUf6bFDJ5wpF8OVWh38%3d&risl=1&pid=ImgRaw&r=0 alt="Kwek-Kwek"class="recipe-image">
+            <div class="recipe-content">
+                <h3>Kwek-Kwek (Orange Quail Eggs)</h3>
+                <p><strong>Ingredients:</strong> Boiled quail eggs, flour, cornstarch, annatto powder (for orange color), and water.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Dredge boiled eggs in flour.</li>
+                        <li>Dip eggs in the orange batter mixture.</li>
+                        <li>Deep fry until the coating is crispy. Serve with spiced vinegar.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="drinks" class="category-section">
+        <h2 class="category-title">Drinks</h2>
+
+        <div class="recipe-card">
+            <img src=//tse3.mm.bing.net/th/id/OIP.8MIVnLViOdrNyUT95za_OQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3 alt="Milk Tea" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Pearl Milk Tea</h3>
+                <p><strong>Ingredients:</strong> Black tea, milk/creamer, sugar syrup, and tapioca pearls (boba).</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Brew tea and let it cool.</li>
+                        <li>Boil tapioca pearls until chewy; soak in syrup.</li>
+                        <li>Combine tea, milk, and ice. Shake well and add pearls to the glass.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src=//tse2.mm.bing.net/th/id/OIP.KxQflXLg6kmViB-WPZi9cgHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3 alt="Coconut Shake" class="recipe-image">
+            <div class="recipe-content">
+                <h3>Buko Shake (Coconut Shake)</h3>
+                <p><strong>Ingredients:</strong> Fresh coconut meat, coconut water, condensed milk, and ice.</p>
+                <p><strong>Preparation:</strong>
+                    <ol>
+                        <li>Place all ingredients in a blender.</li>
+                        <li>Blend until smooth and creamy.</li>
+                        <li>Pour into a glass and serve immediately.</li>
+                    </ol>
+                </p>
+                <a href="#top" class="back-link">↑ Back </a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
